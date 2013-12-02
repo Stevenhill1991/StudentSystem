@@ -1,7 +1,0 @@
-{
-    "fruit": {
-        "apple": "green",
-        "orange": "orange",
-        "banana": "yellow"
-    }
-}
