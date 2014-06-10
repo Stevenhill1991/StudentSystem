@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Begin Options -->
+    <string-array name="rooms_list">
+        <item>319</item>
+        <item>MLT</item>
+        <item>SLT</item>
+        <item>207</item>
+        <item>S-6</item>
+    </string-array>
+    <string-array name="rooms_values">
+        <item>319</item>
+        <item>MLT</item>
+        <item>SLT</item>
+        <item>207</item>
+        <item>S-6</item>
+    </string-array>
+     <string-array name="idle_list">
+         <item>10 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>3 minutes</item>
+    </string-array>
+        <string-array name="idle_value">
+            <item >10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+    </string-array>
+    <!--  End Options -->  
+    <!--  Begin Timetable --> 
+     <string-array name="timetable_spinner">
+        <item >Today</item>
+        <item>This week</item>        
+    </string-array>    
+     <string-array name="timetable_values">
+        <item>1</item>
+        <item>2</item>   
+    </string-array>
+    <!--  End Timetable -->   
+    </resources>

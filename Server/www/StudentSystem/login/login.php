@@ -1,10 +1,9 @@
 <?PHP
 /**
  * Created by
- * User: Steve
- * Date: 11/11/13
- * Time: 17:44
+ * User: Steve 
  * Version: 1.0
+ * perform login based on userrname and password or uid of card.
  */
 //pdo connection file to mysql database
 include("../includes/connect.php");
@@ -13,7 +12,7 @@ if(!empty($_POST['uid'])){
 // grab the uid value
 $uid = htmlspecialchars($_POST["uid"]);
 //prepare statement and execute
-$query = $pdo->prepare("SELECT userName,userType FROM cards WHERE uid=?");
+$query = $pdo->prepare("SELECT userName,userType FROM users WHERE uid=?");
 $query->bindValue(1,$uid);
 $query->execute();
 // if query has data
@@ -31,7 +30,7 @@ echo "Error: username or password not set";
 $userName =  $_POST['username'];
 $passWord = sha1($_POST['password']);
 // check login credentials 
-$query = $pdo->prepare("SELECT userName,userType FROM cards WHERE userName=? AND passWord=?");
+$query = $pdo->prepare("SELECT userName,userType FROM users WHERE userName=? AND passWord=?");
 $query->bindValue(1,$userName);
 $query->bindValue(2,$passWord);
 $query->execute();

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/device_settings" >
+        <ListPreference
+            android:entries="@array/rooms_list"
+            android:entryValues="@array/rooms_values"
+            android:key="setRoom"
+            android:summary="@string/set_room__summary"
+            android:title="@string/set_room_title" />
+        <ListPreference 
+            android:entries="@array/idle_list"
+            android:entryValues="@array/idle_value"
+            android:key="setIdle"
+            android:summary="@string/set_idle_summary"
+            android:title="@string/set_idle_title"/>
+    </PreferenceCategory>
+    
+
+</PreferenceScreen>

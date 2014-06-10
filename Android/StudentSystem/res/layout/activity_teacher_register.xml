@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".LecturerRegisterActivity" >
+
+    
+        <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+    
+    
+
+            <LinearLayout
+                android:id="@+id/tab1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+				<TextView 
+                        android:layout_width="fill_parent"
+                        android:layout_height="100px"
+                        android:id="@+id/txt2"
+                        android:text="Select an entry to begin taking attendance"
+                         android:textSize="18sp" 
+                        android:orientation="vertical"
+                        android:paddingTop="20px"
+                        android:paddingBottom="20px"
+                        android:gravity="center"
+                        />
+                <ListView
+                    android:id="@+id/namesList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center" >
+                </ListView>
+            </LinearLayout>
+ <!-- End of tab 1 -->
+
+           <LinearLayout
+                android:id="@+id/tab2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+                     <TextView 
+                        android:layout_width="fill_parent"
+                        android:layout_height="100px"
+                        android:id="@+id/txt2"
+                        android:text="Select an entry to view logs"
+                         android:textSize="18sp" 
+                        android:orientation="vertical"
+                        android:paddingTop="20px"
+                        android:paddingBottom="20px"
+                        android:gravity="center"
+                        />
+                     <ListView
+                    android:id="@+id/listView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center" >
+                </ListView>
+                </LinearLayout> 
+ <!-- end of tab 2 -->
+
+        </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>
